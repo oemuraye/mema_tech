@@ -7,9 +7,9 @@ import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <section className="container-fluid">
+    <section className="">
       <Header />
-      
+      <main></main>
       <Footer />
     </section>
   );
