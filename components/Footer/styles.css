@@ -1,5 +1,6 @@
 footer {
     color: #000;
+    background-color: var(--light-bg_color);
 }
 footer a {
     color: #000;
@@ -15,6 +16,7 @@ footer form input.form-control {
     border-radius: 0;
     width: 300px;
     padding-left: 1px;
+    background-color: var(--light-bg_color);
 }
 footer form input::placeholder {
     color: #B5B9A0;
@@ -24,7 +26,7 @@ footer form input::placeholder {
 
 footer form button {
     color: var(--dark-color);
-    background-color: #fff;
+    background-color: var(--light-bg_color);
     border-radius: 50px;
     font-size: 18px;
     display: flex;
