@@ -1,12 +1,9 @@
 .navbar {
-    background-color: #f8f9e8;
-    padding: 10px 20px;
+    /* background-color: var(--white-color); */
+    background-color: var(--light-bg_color);
+    padding: 20px;
     position: relative;
     z-index: 10;
-}
-header nav.container {
-    justify-content: unset !important;
-    gap: 100px;
 }
 .logo {
     display: flex;
@@ -24,16 +21,9 @@ header nav.container {
     margin: 0;
     padding: 0;
 }
-.desktop-menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* gap: 25px; */ 
-    /* width: 70%; */
-}
 .desktop-menu .nav-links {
     background-color: var(--basic-color);
-    padding: 8px 20px;
+    padding: 15px 20px;
     border-radius: 50px;
     font-size: 18px;
     gap: 10px;
@@ -55,8 +45,14 @@ header nav.container {
     background-color: var(--dark-color);
     color: white;
     border-radius: 50px;
-    padding: 5px 20px;
+    padding: 15px 20px;
     font-size: 18px;
+}
+.join-btn:hover {
+    background-color: var(--dark-color);
+    color: white;
+    transform: scale(0.98);
+    transition: all 0.5s ease;
 }
 .menu-icon {
     display: none;
@@ -144,8 +140,8 @@ header nav.container {
   /* Responsive Design */
 @media (max-width: 768px) {
     header nav.container {
-        justify-content: space-between !important;
-        gap: 10px;
+        /* justify-content: space-between !important;
+        gap: 10px; */
     }
     .desktop-menu {
       display: none;

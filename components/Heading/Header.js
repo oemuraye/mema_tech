@@ -6,7 +6,7 @@ import Link from "next/link";
 
 import logo from "@/public/images/logo.png";
 
-import './style.css';
+import './styles.css';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,8 +20,8 @@ const Header = () => {
   };
 
   return (
-    <header className='navbar wrapper'>
-      <nav className="container">
+    <header className='navbar wrapper py-4'>
+      <nav className="container-fluid">
         <Link href="/" className="logo">
           <Image src={logo} alt="Logo" width="54px" height="54px" />
           <span>mema<strong>tech</strong></span>
@@ -41,6 +41,8 @@ const Header = () => {
             <li><Link href="/blog" className="nav-link">Blog</Link></li>
             <li><Link href="/contact" className="nav-link">Contact</Link></li>
           </ul>
+        </div>
+        <div className="desktop-menu">
           <Link href="/join" className="btn join-btn">Join Us</Link>
         </div>
 
