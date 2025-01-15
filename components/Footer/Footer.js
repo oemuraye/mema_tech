@@ -1,8 +1,12 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
+import linkedinIcon from "@/public/icons/linkedin-icon.png";
+import phoneIcon from "@/public/icons/phone-icon.png";
+import locationIcon from "@/public/icons/location-icon.png";
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { faPhone, faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 
 import './styles.css';
@@ -35,8 +39,9 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link href="" target='_blank'>
-                    <FontAwesomeIcon icon={faLinkedinIn} size="2x" />
-                    <span>MemaTech Empowerment Foundation</span>
+                      {/* <FontAwesomeIcon icon={faLinkedinIn} size="2x" /> */}
+                      <Image src={linkedinIcon} alt="social-icon" />
+                      <span>MemaTech Empowerment Foundation</span>
                   </Link>
                 </li>
               </ul>
@@ -48,16 +53,18 @@ const Footer = () => {
               <h3>ADDRESS</h3>
               <ul>
                 <li>
-                  <Link href="tel:+2347034361648" target='_blank'>
-                    <FontAwesomeIcon icon={faPhone} size="2x" />
-                    <span>+234 703 4361 648</span>
-                  </Link>
+                    <Link href="tel:+2347034361648" target='_blank'>
+                        {/* <FontAwesomeIcon icon={faPhone} size="2x" /> */}
+                        <Image src={phoneIcon} alt="social-icon" />
+                        <span>+234 703 4361 648</span>
+                    </Link>
                 </li>
                 <li>
-                  <Link href="" target='_blank'>
-                  <FontAwesomeIcon icon={faLocationDot} size="2x" />
-                    <span>Drive 1, Prince and Princess Estate, Abuja.</span>
-                  </Link>
+                    <Link href="" target='_blank'>
+                    {/* <FontAwesomeIcon icon={faLocationDot} size="2x" /> */}
+                        <Image src={locationIcon} alt="social-icon" />
+                        <span>Drive 1, Prince and Princess Estate, Abuja.</span>
+                    </Link>
                 </li>
               </ul>
             </section>

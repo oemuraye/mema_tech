@@ -27,8 +27,8 @@ const Section1 = () => {
     
   return (
     <section className="vision_mission-section wrapper py-5">
-      <div className="row my-5">
-        <div className="image-container container col-md-5 col-sm-12">
+      <div className="row my-0 my-md-5">
+        <div className="image-container container col-md-5 col-sm-12 d-none d-md-block">
           <Image src={images[currentImageIndex]} alt={`Vision ${currentImageIndex + 1}`} className='img-fluid' />
         </div>
 
@@ -40,6 +40,9 @@ const Section1 = () => {
               her potential through technology, leading change, inspiring future 
               generations, and shaping a more inclusive, tech-driven society.
             </p>
+          </div>
+          <div className="content d-block d-md-none my-5">
+            <Image src={images[currentImageIndex]} alt={`Vision ${currentImageIndex + 1}`} className='img-fluid' />
           </div>
           <div className="content">
             <h3>MISSION</h3>

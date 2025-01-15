@@ -5,7 +5,7 @@ import Header from '@/components/Heading/Header';
 
 const About = () => {
   return (
-    <section className="">
+    <section className="about-page">
         <Header />
         <main>
             <Section1 />

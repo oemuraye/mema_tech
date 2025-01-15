@@ -1,14 +1,14 @@
-"use client"
+"use client";
 
-import React, { useRef, useEffect, useState } from 'react';
-import Image from 'next/image';
+import React, { useRef, useEffect, useState } from "react";
+import Image from "next/image";
 
-import showcaseImage1 from '@/public/images/image-showcase1.png';
-import showcaseImage2 from '@/public/images/image-showcase2.png';
-import showcaseImage3 from '@/public/images/image-showcase3.png';
-import showcaseImage4 from '@/public/images/image-showcase4.png';
+import showcaseImage1 from "@/public/images/image-showcase1.png";
+import showcaseImage2 from "@/public/images/image-showcase2.png";
+import showcaseImage3 from "@/public/images/image-showcase3.png";
+import showcaseImage4 from "@/public/images/image-showcase4.png";
 
-import './styles.css';
+import "./styles.css";
 
 const images = [
     showcaseImage1,
@@ -18,29 +18,53 @@ const images = [
 ];
 
 const Section2 = () => {
-    const [visible, setVisible] = useState(false);
     const sectionRef = useRef(null);
+    const [isStacked, setIsStacked] = useState(true);
 
+    useEffect(() => {
+        const handleScroll = () => {
+            if (!sectionRef.current) return;
 
-  return (
-    <section className="vr_showcase-section py-5">
-      <div className="">
-        <h2 className="text-center text-uppercase">One girl at a time</h2>
+            const sectionTop = sectionRef.current.getBoundingClientRect().top;
+            const sectionBottom = sectionRef.current.getBoundingClientRect().bottom;
+            const viewportHeight = window.innerHeight;
 
-        <div ref={sectionRef} className="image-display">
-        {images.map((src, index) => (
-            <Image
-            key={index}
-            src={src}
-            alt={`Image ${index + 1}`}
-            className={visible ? "spread" : "default"}
-            style={{ "--image-index": index }}
-            />
-        ))}
-        </div>
-      </div>
-    </section>
-  );
+            // Trigger transition when the section is 75% visible in the viewport
+            if (sectionTop < viewportHeight * 0.75 && sectionBottom > viewportHeight * 0.25) {
+                setIsStacked(false); // Spread images
+            } else {
+                setIsStacked(true); // Stack images
+            }
+        };
+
+        // Attach the scroll event listener
+        window.addEventListener("scroll", handleScroll);
+
+        // Cleanup the listener on unmount
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+    return (
+        <section className="vr_showcase-section py-5">
+            <div className="">
+                <h2 className="text-center text-uppercase">One girl at a time</h2>
+
+                <div ref={sectionRef} className={`image-display ${isStacked ? "stacked" : "spread"}`}>
+                    {images.map((src, index) => (
+                        <Image
+                            key={index}
+                            src={src}
+                            alt={`Image ${index + 1}`}
+                            className="showcase-image"
+                            style={{ "--image-index": index }}
+                        />
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
 };
 
 export default Section2;

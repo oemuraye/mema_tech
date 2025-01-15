@@ -38,12 +38,77 @@ h3 {
 
 .image-display {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     position: relative;
-    overflow: hidden;
     margin-top: 30px;
+    gap: 0;
+    transition: gap 2s ease-in-out;
+    height: 400px;
 }
+
+.image-display.stacked {
+    height: 400px;
+    position: relative;
+}
+
+.image-display.stacked .showcase-image {
+    position: absolute;
+    transition: all 2s ease-in-out;
+}
+
+/* Apply offsets for overlapping effect in stacked state */
+.image-display.stacked .showcase-image:nth-child(1) {
+    transform: translate(-50%, 0); /* Move left */
+    z-index: 0;
+}
+.image-display.stacked .showcase-image:nth-child(2) {
+    transform: translate(-25%, 0); /* Move left */
+    z-index: 1;
+}
+.image-display.stacked .showcase-image:nth-child(3) {
+    transform: translate(25%, 0); /* Move right */
+    z-index: 2;
+}
+.image-display.stacked .showcase-image:nth-child(4) {
+    transform: translate(50%, 0); /* Move further right */
+    z-index: 3;
+}
+
+.image-display.spread {
+    gap: 30px; 
+    position: relative;
+}
+
+.image-display.spread .showcase-image {
+    position: absolute; /* Keep absolute positioning for a smoother transition */
+    transition: all 2s ease-in-out;
+}
+
+/* Reset transforms for spread layout */
+.image-display.spread .showcase-image:nth-child(1) {
+    transform: translate(-550px, 0); /* Move to its leftmost position */
+    z-index: 0;
+}
+.image-display.spread .showcase-image:nth-child(2) {
+    transform: translate(-200px, 0); /* Move slightly left */
+    z-index: 1;
+}
+.image-display.spread .showcase-image:nth-child(3) {
+    transform: translate(150px, 0); /* Move slightly right */
+    z-index: 2;
+}
+.image-display.spread .showcase-image:nth-child(4) {
+    transform: translate(550px, 0); /* Move to its rightmost position */
+    z-index: 3;
+}
+
+.showcase-image {
+    border-radius: 12px;
+    transition: transform 2s ease-in-out;
+}
+
+
 
 
 
@@ -83,8 +148,14 @@ h3 {
 
 .info-video {
     background-color: var(--basic-color);
-    padding: 70px 0;
+    padding: 30px 0;
 }
+.info-video .img-fluid {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Add any desired styling */
+}
+  
 
 .empowerment-section {
     max-width: 1254px;
@@ -192,13 +263,13 @@ h3 {
         line-height: 39px;
     }
     .hero-section h1 {
-        font-size: 36px;
-        line-height: 35px;
+        font-size: 40px;
+        line-height: 44px;
     }
 
     .vr_showcase-section h2 {
-        font-size: 32px;
-        line-height: 31px;
+        font-size: 45px;
+        line-height: 44px;
     }
     .vision-section h2 {
         font-size: 40px !important;
@@ -206,7 +277,35 @@ h3 {
     }
     
     .image-display {
-        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        height: 250px;
+    }
+    .image-display.stacked {
+        height: 250px;
+    }
+    .image-display img {
+        width: 128px;
+        height: 133px;
+        object-fit: cover;
+    }
+    /* Reset transforms for spread layout */
+    .image-display.spread .showcase-image:nth-child(1) {
+        transform: translate(-90px, -60px); 
+    }
+    .image-display.spread .showcase-image:nth-child(2) {
+        transform: translate(90px, -60px); 
+    }
+    .image-display.spread .showcase-image:nth-child(3) {
+        transform: translate(-90px, 90px);
+    }
+    .image-display.spread .showcase-image:nth-child(4) {
+        transform: translate(90px, 90px); 
+    }
+    .about-section p {
+        font-size: 16px;
+        line-height: 19px;
     }
     .vision-section .inner-wrapper p {
         font-size: 14px;
