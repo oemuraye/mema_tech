@@ -1,3 +1,5 @@
+"use client"
+import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 
 import visionHeroImg from '@/public/images/vision-hero_img.png';
@@ -22,6 +24,29 @@ const visionDetails = {
 }
 
 const Section7 = () => {
+    const imageRef = useRef(null);
+    const [inView, setInView] = useState(false);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                setInView(entry.isIntersecting);
+            },
+            { threshold: 0.5 }
+        );
+
+        if (imageRef.current) {
+            observer.observe(imageRef.current);
+        }
+
+        return () => {
+            if (imageRef.current) {
+                observer.unobserve(imageRef.current);
+            }
+        };
+    }, []);
+
+
   return (
     <section className='vision-section wrapper py-5'>
         <div className="inner-wrapper text-center">
@@ -42,7 +67,7 @@ const Section7 = () => {
         <div className="inner-wrapper text-center">
             <h2>Join us in delivering change-one girl, one dream, one step at a time.</h2>
 
-            <div className="vision-hero_img">
+            <div className={`vision-hero_img`} ref={imageRef}>
                 <Image src={visionHeroImg} alt="" className='img-fluid' />
             </div>
         </div>
