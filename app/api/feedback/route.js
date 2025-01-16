@@ -11,11 +11,13 @@ export async function POST(req) {
     if (req.method === "POST") {
       try {
         const formInfo = await req.json();
+        console.log(formInfo);
+        
 
         const output = `
             <h3>You have a new request</h3>
-            <p>Email: ${formInfo.email}</p>
-            <p>Password: ${formInfo.message}</p>
+            ${formInfo.email ? `<p>Email: ${formInfo.email}</p>` : ""}
+            <p>Message: ${formInfo.message}</p>
         `;
 
         const transporter = nodemailer.createTransport({

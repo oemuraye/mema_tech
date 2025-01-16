@@ -52,19 +52,19 @@ const Section2 = () => {
                 {/* <h2 className="text-center text-uppercase">One girl at a time</h2> */}
 
                 <div ref={sectionRef} className="image-wrapper">
-    <div className={`image-display ${isStacked ? "stacked" : "spread"}`}>
-        {images.map((src, index) => (
-            <Image
-                key={index}
-                src={src}
-                alt={`Image ${index + 1}`}
-                className="showcase-image"
-                style={{ "--image-index": index }}
-            />
-        ))}
-    </div>
-    <h2 className={`text-center text-uppercase`}>One girl at a time</h2>
-</div>
+                    <div className={`image-display ${isStacked ? "stacked" : "spread"}`}>
+                        {images.map((src, index) => (
+                            <Image
+                                key={index}
+                                src={src}
+                                alt={`Image ${index + 1}`}
+                                className="showcase-image"
+                                style={{ "--image-index": index }}
+                            />
+                        ))}
+                    </div>
+                    <h2 className={`text-center text-uppercase`}>One girl at a time</h2>
+                </div>
 
             </div>
         </section>

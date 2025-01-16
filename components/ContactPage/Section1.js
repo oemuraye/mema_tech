@@ -1,3 +1,6 @@
+"use client";
+import { useState } from "react";
+
 import Image from 'next/image';
 import Link from 'next/link';
 import Form from 'next/form'
@@ -13,6 +16,68 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import './styles.css';
 
 const Section1 = () => {
+    const [formData, setFormData] = useState({ email: "", message: "" });
+  const [formError, setFormError] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [successMessage, setSuccessMessage] = useState("");
+
+  const handleChange = (e) => {
+    setFormError(""); // Clear any errors
+    setFormData({ ...formData, [e.target.name]: e.target.value }); // Update form data
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setFormError("");
+    setSuccessMessage("");
+
+    // Validation
+    if (!formData.email.trim()) {
+      setFormError("Please provide your email");
+      setLoading(false);
+      return;
+    }
+    if (!formData.message.trim()) {
+      setFormError("Please type your message");
+      setLoading(false);
+      return;
+    }
+
+    // Send data to the server
+    try {
+      const response = await fetch("/api/feedback", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        setSuccessMessage("Your message has been sent successfully!");
+        setFormData({ email: "", message: "" }); // Reset form fields
+      } else {
+        const errorData = await response.json();
+        setFormError(errorData.message || "Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      setFormError("Failed to send your message. Please check your connection.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // Automatically clear messages after 10 seconds
+  if (successMessage) {
+    setTimeout(() => {
+      setSuccessMessage("");
+    }, 10000);
+  }
+  if (formError) {
+    setTimeout(() => {
+      setFormError("");
+    }, 10000);
+  }
   return (
     <section className='contact_page-section1'>
         <footer className='footer wrapper'>
@@ -22,12 +87,27 @@ const Section1 = () => {
                     <div className="col-md-4 col-sm-12 py-3">
                         <section className="feedback-form">
                             <h3>LEAVE A MESSAGE</h3>
-                            <form className='d-flex flex-column gap-4'>
-                                <input type="text" name="email" className='form-control' placeholder='Enter here' required />
-                                <input type="text" name="message" className='form-control' placeholder='Type Message' required />
-                                <button type="submit">Send</button>
+                            <form className="d-flex flex-column gap-4" onSubmit={handleSubmit}>
+                            <input type="text" name="email" className="form-control" placeholder="Enter here" value={formData.email}
+                                onChange={handleChange}
+                                required
+                            />
+                            <input type="text" name="message" className="form-control" placeholder="Type Message" value={formData.message}
+                                onChange={handleChange}
+                                required
+                            />
+                            <button type="submit" className="">
+                                {loading ? (
+                                <span className="spinner-border spinner-border-sm text-secondary" role="status" />
+                                ) : (
+                                "Send"
+                                )}
+                            </button>
                             </form>
+                            {formError && <div className="text-danger mt-2">{formError}</div>}
+                            {successMessage && <div className="text-success mt-2">{successMessage}</div>}
                         </section>
+
                     </div>
 
                     <div className="col-md-4 col-sm-12 py-3">

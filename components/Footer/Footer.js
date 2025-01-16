@@ -1,3 +1,5 @@
+"use client"
+
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -10,8 +12,66 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 
 import './styles.css';
+import { useState } from 'react';
 
 const Footer = () => {
+  const [formData, setFormData] = useState({ name: "" });
+  const [formError, setFormError] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [successMessage, setSuccessMessage] = useState("");
+
+  const handleChange = (e) => {
+    setFormError(""); 
+    // setSuccessMessage(""); 
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setFormError("");
+    setSuccessMessage("");
+
+    if (!formData.message.trim()) {
+      setFormError("Please fill in your name");
+      setLoading(false);
+      return;
+    }
+
+    // Send data to the server
+    try {
+      const response = await fetch("/api/feedback", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        setSuccessMessage("Your message has been sent successfully!");
+        setFormData({ message: "" }); // Reset form fields
+      } else {
+        const errorData = await response.json();
+        setFormError(errorData.message || "Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      setFormError("Failed to send your message. Please check your connection.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+
+  if (successMessage) {
+    setTimeout(() => {
+      setSuccessMessage(false);
+    }, [10000]);
+  }
+  if (formError) {
+    setTimeout(() => {
+      setFormError([]);
+    }, [10000]);
+  }
   return (
     <footer className='footer wrapper py-5'>
       <div className="container-fluid py-5">
@@ -20,10 +80,21 @@ const Footer = () => {
           <div className="col-md-4 col-sm-12 py-3">
             <section className="feedback-form">
               <h2>LEAVE A MESSAGE</h2>
-              <form className='d-flex gap-4'>
-                  <input type="text" id="name" name="name" className='form-control' placeholder='Enter here' required />
-                  <button type="submit">Join Us</button>
+              <form className="d-flex gap-4" onSubmit={handleSubmit}>
+                <input type="text" id="name" name="message" className="form-control" placeholder="Enter here" value={formData.message}
+                  onChange={handleChange}
+                  required
+                />
+                <button type="submit" className="">
+                  {loading ? (
+                    <span className="spinner-border spinner-border-sm text-secondary" role="status" />
+                  ) : (
+                    "Join Us"
+                  )}
+                </button>
               </form>
+              {formError && <div className="text-danger mt-2">{formError}</div>}
+              {successMessage && <div className="text-success mt-2">{successMessage}</div>}
             </section>
           </div>
 
