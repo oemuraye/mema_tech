@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Palenk Radney'; 
-  src: url('/public/fonts/palenk-radney-font/PalenkRadney-ARw1D.otf') format('opentype');
+  src: url('@/public/fonts/palenk-radney-font/PalenkRadney-ARw1D.otf') format('opentype');
 }
 
 :root {
@@ -11,13 +11,14 @@
   --white-color: #fff;
 
   --font-poppins: 'Poppins';
-  --font-palenk: 'Palenk';
+  --font-palenk: 'Palenk Radney';
 }
 
 
 
 body {
   font-family: var(--font-poppins);
+  background-color: var(--light-bg_color);
 }
 a {
   text-decoration: none;
@@ -37,8 +38,8 @@ ul {
   list-style: none;
 }
 .padding_y-spacing {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 
 

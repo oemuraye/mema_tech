@@ -59,7 +59,7 @@ const Section7 = () => {
                 <div key={index} className="vision-card m-auto my-3">
                     <div className="ball-pin mb-4"></div>
                     <h5>{detail.title}</h5>
-                    <p>{detail.description}</p>
+                    <p className='mt-4'>{detail.description}</p>
                 </div>
             ))}
         </div>

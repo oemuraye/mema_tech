@@ -72,7 +72,7 @@ footer ul a {
     display: flex;
     align-items: center;
     padding-left: 50%; 
-    animation: scroll-text 50s linear infinite;
+    animation: scroll-text 20s linear infinite;
     white-space: nowrap; 
     font-size: 128px; 
     color: var(--dark-color); 

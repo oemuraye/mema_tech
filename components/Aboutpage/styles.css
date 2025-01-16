@@ -32,7 +32,7 @@
 .mission-content h3 {
     font-family: var(--font-palenk);
     color: #000;
-    font-size: 60px;
+    font-size: 64px;
     font-weight: 400;
 }
 .mission-content p {
@@ -54,9 +54,14 @@
 .team-member {
     padding: 20px;
 }
+.team-members.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
   
 .team-section h2 {
-    font-size: 60px;
+    font-size: 96px;
     font-weight: 400;
     font-family: var(--font-palenk);
 }
@@ -70,7 +75,6 @@
 }
   
 .social-icons a {
-    /* color: #0077b5; */
     font-size: 20px;
 }
   
@@ -98,4 +102,18 @@
         font-size: 16px;
         line-height: 24px;
     }  
+    .team-members .team-image {
+        width: 138px;
+        height: 138px;
+    }
+    .team-members .team-member {
+        width: 168px;
+        /* height: 138px; */
+    }
+    .team-member h5 {
+        font-size: 15px;
+    }
+    .team-member p {
+        font-size: 13px;
+    }
 }

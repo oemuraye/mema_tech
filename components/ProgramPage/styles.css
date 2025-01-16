@@ -22,6 +22,7 @@
 .programs_page-section1 .program-item .row {
     margin-left: 0;
     margin-right: 0;
+    /* height: 828px; */
 }
 .program-list .program-details {
     background-color: var(--primary-color);
@@ -29,7 +30,7 @@
 .program-list .program-details h3 {
     color: var(--light-bg_color);
     font-family: var(--font-palenk);
-    font-size: 90px;
+    font-size: 96px;
     font-weight: 400;
 }
 .program-list .program-details h5 {
@@ -45,7 +46,14 @@
     line-height: 45px;
     margin-top: 60px;
 }
-
+.program-list .image_container {
+    position: sticky;
+    top: 110px;
+    /* max-height: 497px; */
+}
+/* .program-list .image_container img {
+    max-height: 497px;
+} */
 .program-list .basic-bg_color {
     background-color: var(--basic-color);
 }
@@ -74,5 +82,8 @@
         font-size: 16px;
         line-height: 27px;
         margin-top: 35px;
+    }
+    .program-list .image_container img {
+        height: 212px;
     }
 }

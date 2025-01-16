@@ -41,7 +41,7 @@ const Footer = () => {
                   <Link href="" target='_blank'>
                       {/* <FontAwesomeIcon icon={faLinkedinIn} size="2x" /> */}
                       <Image src={linkedinIcon} alt="social-icon" />
-                      <span>MemaTech Empowerment Foundation</span>
+                      <span>MemaTech Empowerment <br /> Foundation</span>
                   </Link>
                 </li>
               </ul>
@@ -63,7 +63,7 @@ const Footer = () => {
                     <Link href="" target='_blank'>
                     {/* <FontAwesomeIcon icon={faLocationDot} size="2x" /> */}
                         <Image src={locationIcon} alt="social-icon" />
-                        <span>Drive 1, Prince and Princess Estate, Abuja.</span>
+                        <span>Drive 1, Prince and Princess <br /> Estate, Abuja.</span>
                     </Link>
                 </li>
               </ul>

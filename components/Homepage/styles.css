@@ -14,7 +14,7 @@ h3 {
 .vision-section h2,
 .vr_showcase-section h2,
 .hero-section h1 {
-    font-size: 100px;
+    font-size: 105px;
     font-weight: 400;
     line-height: 102px;
     text-align: center;
@@ -22,6 +22,32 @@ h3 {
     color: #000;
     font-family: var(--font-palenk);
 }
+
+.vr_showcase-section h2 {
+    color: var(--dark-color);
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    z-index: 2;
+    transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+    width: 100%;
+}
+
+/* Hide the text when stacked */
+.image-display.stacked + h2 {
+    transform: translate(-50%, 100%); /* Push the text down */
+    opacity: 0; /* Fade out */
+    z-index: 0; /* Ensure it goes behind images */
+}
+
+/* Show the text when spread */
+.image-display.spread + h2 {
+    transform: translate(-50%, -250px); /* Restore to center */
+    opacity: 1; /* Fade in */
+    z-index: 2; 
+}
+
+
 
 
 .vr_showcase-section {
@@ -44,7 +70,7 @@ h3 {
     margin-top: 30px;
     gap: 0;
     transition: gap 2s ease-in-out;
-    height: 400px;
+    height: 550px;
 }
 
 .image-display.stacked {
@@ -87,19 +113,19 @@ h3 {
 
 /* Reset transforms for spread layout */
 .image-display.spread .showcase-image:nth-child(1) {
-    transform: translate(-550px, 0); /* Move to its leftmost position */
+    transform: translate(-550px, 50px); /* Move to its leftmost position */
     z-index: 0;
 }
 .image-display.spread .showcase-image:nth-child(2) {
-    transform: translate(-200px, 0); /* Move slightly left */
+    transform: translate(-200px, 50px); /* Move slightly left */
     z-index: 1;
 }
 .image-display.spread .showcase-image:nth-child(3) {
-    transform: translate(150px, 0); /* Move slightly right */
+    transform: translate(150px, 50px); /* Move slightly right */
     z-index: 2;
 }
 .image-display.spread .showcase-image:nth-child(4) {
-    transform: translate(550px, 0); /* Move to its rightmost position */
+    transform: translate(550px, 50px); /* Move to its rightmost position */
     z-index: 3;
 }
 
@@ -173,13 +199,16 @@ h3 {
     line-height: 24px;
 } 
 .empowerment-section h3 {
-    font-size: 60px;
+    font-size: 96px;
 } 
 
 
 
 .partners_sponsors-section {
     background-color: var(--light-bg_color);
+}
+.partners_sponsors-section h4 {
+    font-size: 27px;
 }
 .partners_sponsors-section .brand-logo {
     width: 180px;
@@ -202,13 +231,16 @@ h3 {
 }
 .vision-section .inner-wrapper h2 {
     color: #fff;
-    font-size: 70px;
+    font-size: 105px;
 }
 .vision-section .inner-wrapper p {
     font-size: 20px;
     max-width: 857px;
     margin: 0 auto;
 }
+
+
+
 .vision-cards .vision-card {
     position: relative;
     width: 299px;
@@ -216,28 +248,50 @@ h3 {
     border: 1px solid var(--light-bg_color);
     border-radius: 20px;
     padding: 20px 20px;
-    /* border-right: none; */
-
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
-    /* align-items: center; */
+    overflow: hidden; 
 }
+
 .vision-card .ball-pin {
     background-color: var(--basic-color);
-    border-radius: 50%;
+    border-radius: 50%; 
     width: 55px;
-    height: 55px; 
-
-}
-.vision-card.spread .ball-pin {
-    width: 100%;
-    height: 100%;  
+    height: 55px;
     position: absolute;
-    border-radius: 20px;
-    left: 0;
-    top: 0;
+    top: 20px;
+    left: 20px;
+    transition: all 0.8s ease-in-out; 
+    z-index: 1; 
 }
+
+
+.vision-cards .vision-card:hover .ball-pin {
+    width: 300%;
+    height: 300%;
+    top: -300px; 
+    left: -300px; 
+    border-radius: 10px 5px 92px 5px;
+    -webkit-border-radius: 10px 5px 92px 5px;
+    -moz-border-radius: 10px 5px 92px 5px;
+}
+
+.vision-cards .vision-card h5,
+.vision-cards .vision-card p {
+    position: relative;
+    z-index: 2; 
+    color: var(--text-color, #fff); 
+    transition: transform 0.7s ease-in-out, color 0.7s ease-in-out;
+    transform: translateY(70); 
+}
+.vision-cards .vision-card:hover h5,
+.vision-cards .vision-card:hover p {
+    transform: translateY(30); 
+    color: #000;
+}
+
+
+
+
+
 .vision-section h2 {
     font-size: 80px;
     z-index: 2;
@@ -290,16 +344,17 @@ h3 {
     h3,
     .empowerment-section h3 {
         font-size: 40px;
-        line-height: 39px;
+        line-height: 40px;
     }
     .hero-section h1 {
-        font-size: 40px;
-        line-height: 44px;
+        font-size: 45px;
+        line-height: 45px;
     }
 
+    .vision-section .inner-wrapper h2,
     .vr_showcase-section h2 {
-        font-size: 45px;
-        line-height: 44px;
+        font-size: 40px;
+        line-height: 39px;
     }
     .vision-section h2 {
         font-size: 40px !important;
@@ -310,7 +365,10 @@ h3 {
         justify-content: center;
         flex-wrap: wrap;
         gap: 40px;
-        height: 250px;
+        height: 300px;
+    }
+    .image-display.spread + h2 {
+        transform: translate(-50%, -170px); 
     }
     .image-display.stacked {
         height: 250px;

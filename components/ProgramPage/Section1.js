@@ -15,12 +15,12 @@ const Section1 = () => {
         <section className="program-list">
             <div className="program-item padding_y-spacing">
                 <div className="row">
-                    <div className="col-md-5 col-sm-12 mb-5">
-                        <div className="">
-                            <Image src={programImage1} alt="Program 1" className='img-fluid' />
+                    <div className="col-md-5 col-sm-12 mb-5 position-relative">
+                        <div className="image_container">
+                            <Image src={programImage1} alt="Program 1" className='img-fluid' height="462px"/>
                         </div>
                     </div>
-                    <div className="col-md-7 col-sm-12 mb-5 program-details rounded-4">
+                    <div className="col-md-7 col-sm-12 mb-5 program-details rounded-4 p-2 p-md-4">
                         <div className="p-md-4 p-2 py-5">
                             <h3>KARATU GIRLS:</h3>
                             <h5>Unlocking the Future for Secondary School Girls</h5>
@@ -31,12 +31,12 @@ const Section1 = () => {
             </div>
             <div className="program-item padding_y-spacing">
                 <div className="row">
-                    <div className="col-md-5 col-sm-12 mb-5">
-                        <div className="">
-                            <Image src={programImage1} alt="Program 1" className='img-fluid' />
+                    <div className="col-md-5 col-sm-12 mb-5 position-relative">
+                        <div className="image_container">
+                            <Image src={programImage1} alt="Program 1" className='img-fluid' height="462px"/>
                         </div>
                     </div>
-                    <div className="col-md-7 col-sm-12 mb-5 program-details rounded-4 basic-bg_color">
+                    <div className="col-md-7 col-sm-12 mb-5 program-details rounded-4 p-2 p-md-4 basic-bg_color">
                         <div className="p-md-4 p-2 py-5">
                             <h3>KARATU GIRLS:</h3>
                             <h5>Unlocking the Future for Secondary School Girls</h5>

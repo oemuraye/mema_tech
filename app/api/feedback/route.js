@@ -28,9 +28,9 @@ export async function POST(req) {
 
 
         const mailOptions = {
-          from: process.env.sender_email,
+          from: formInfo.email && formInfo.email.trim() !== "" ? formInfo.email : process.env.sender_email,
           to: process.env.recipient_email,
-          subject: "Client Feedback",
+          subject: "MemaTech Website Feedback",
           html: output,
         };
 

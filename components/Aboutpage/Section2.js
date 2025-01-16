@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import linkedinIcon from "@/public/icons/linkedin-icon.png";
 
 import teamImg1 from '@/public/images/executive-img1.png';
 import teamImg2 from '@/public/images/executive-img2.png';
@@ -113,23 +114,24 @@ const Section2 = () => {
         <div className="executive-team">
             <h2 className='text-center my-5'>OUR EXECUTIVE TEAM</h2>
 
-            <div className="team-members d-flex flex-wrap">
+            <div className="team-members row justify-content-center">
             {teamMembers.map((member, index) => (
-                <div key={index} className="team-member text-center mb-4 m-auto">
-                    <Image src={member.image} alt={member.name} className="rounded-circle mb-1" 
+                <div key={index} className="team-member text-center mb-4 col-md-3 col-sm-6">
+                    <Image src={member.image} alt={member.name} className="rounded-circle mb-1 team-image" 
                         width={240} height={240}
                     />
                     <h5 className='mb-0'>{member.name}</h5>
                     <p className='mb-0'>{member.position}</p>
-                    <div className="social-icons d-flex justify-content-center gap-4">
+                    <div className="social-icons d-flex justify-content-center gap-3">
                         {member.social.linkedin && (
                             <a href={member.social.linkedin} target="_blank" rel="noopener noreferrer">
-                                <FontAwesomeIcon icon={faInstagram}  />
+                                <FontAwesomeIcon icon={faInstagram} size='' />
                             </a>
                         )}
                         {member.social.instagram && (
                             <a href={member.social.instagram} target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={faLinkedinIn}  />
+                                {/* <Image src={linkedinIcon} alt="social-icon" /> */}
                             </a>
                         )}
                     </div>
@@ -141,10 +143,10 @@ const Section2 = () => {
         <div className="mentor-team mt-5 py-5">
             <h2 className='text-center my-5'>MENTORS & VOLUNTEERS</h2>
 
-            <div className="team-members d-flex flex-wrap">
+            <div className="team-members row justify-content-center justify-content-md-start">
             {mentorMembers.map((member, index) => (
-                <div key={index} className="team-member text-center mb-4 m-auto">
-                    <Image src={member.image} alt={member.name} className="rounded-circle mb-1" 
+                <div key={index} className="team-member text-center mb-4 col-md-3 col-sm-6">
+                    <Image src={member.image} alt={member.name} className="rounded-circle team-image mb-1" 
                         width={240} height={240}
                     />
                     <h5 className='mb-0'>{member.name}</h5>

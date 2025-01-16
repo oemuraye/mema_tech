@@ -24,7 +24,7 @@ const Header = () => {
   };
 
   return (
-    <header className='navbar wrapper py-4'>
+    <header className='navbar wrapper py-4 sticky-top'>
       <nav className="container-fluid">
         <Link href="/" className="logo">
           <Image src={logo} alt="Logo" width="54px" height="54px" />

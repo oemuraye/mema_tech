@@ -61,9 +61,6 @@
 }
 
 @media (max-width: 768px) {
-    .blog_posts-section {
-        background-color: var(--primary-color);
-    }
     .blog-card .card-body {
         padding: 20px 0;
     }
