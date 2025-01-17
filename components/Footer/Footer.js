@@ -80,7 +80,7 @@ const Footer = () => {
           <div className="col-md-5 col-sm-12 py-3">
             <section className="feedback-form">
               <h2 className='mb-4'>LEAVE A MESSAGE</h2>
-              <form className="d-flex gap-4" onSubmit={handleSubmit}>
+              <form className="d-flex flex-wrap gap-4" onSubmit={handleSubmit}>
                 <input type="text" id="name" name="message" className="form-control" placeholder="Enter here" value={formData.message}
                   onChange={handleChange}
                   required
