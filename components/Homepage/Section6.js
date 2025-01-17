@@ -25,9 +25,9 @@ const Section6 = () => {
     <section className='partners_sponsors-section wrapper py-5'>
         <h4 className="text-center py-5">OUR PARTNERS & SPONSORS</h4>
 
-        <div className="brands d-flex justify-content-between align-items-center gap-2 flex-wrap mb-5">
+        <div className="brands d-flex justify-content-center justify-content-md-between align-items-center gap-2 flex-wrap mb-5 m-auto">
             {images.map((src, index) => (
-                <div key={index} className='brand-logo'>
+                <div key={index} className='brand-logo my-2'>
                     <Image src={src} alt={`Image ${index + 1}`} className='img-fluid' />
                 </div>
             ))}
