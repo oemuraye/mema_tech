@@ -6,9 +6,9 @@ import infoImg from '@/public/images/info_img.png';
 
 const Section4 = () => {
   return (
-    <section className='info-video wrapper'>
+    <section className='info-video wrapper pb-5'>
 
-          <div className="inner_wrapper">
+          <div className="inner_wrapper pb-5">
             {/* <Image src={infoImg} alt='info image' objectFit='cover' className='img-fluid' /> */}
             <video 
               className='img-fluid' autoPlay muted loop controls 

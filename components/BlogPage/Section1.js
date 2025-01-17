@@ -29,6 +29,13 @@ const blogPosts = [
       image: blogImage1,
       link: "/blog/support-girl-child",
     },
+    {
+      title: "How to Support the Girl Child",
+      content:
+        "At MemaTech, we believe in creating tailored opportunities that empower girls, women, and small businesses to thrive in a tech-driven world. Through our two core initiatives—Karatu Girls and Masma Reach.",
+      image: blogImage1,
+      link: "/blog/support-girl-child",
+    },
   ];
 
 const Section1 = () => {
@@ -42,9 +49,9 @@ const Section1 = () => {
         <section className="blog_posts-section padding_y-spacing">
             <div className="row">
             {blogPosts.map((post, index) => (
-                <div key={index} className="col-md-4 col-sm-6 mb-4">
+                <div key={index} className="col-md-6 col-sm-12 mb-4">
                     <div className="blog-card p-3">
-                        <Image src={post.image} alt={post.title} className="card-img-top" width={400} height={250} />
+                        <Image src={post.image} alt={post.title} className="card-img-top " height='330px' />
                         <div className="card-body">
                             <h5 className="card-title">{post.title}</h5>
                             <p className="card-text">{post.content}</p>

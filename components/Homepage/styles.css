@@ -293,7 +293,8 @@ h3 {
 
 
 .vision-section h2 {
-    font-size: 80px;
+    font-size: 105px;
+    line-height: 105px;
     z-index: 2;
     position: relative;
 }
@@ -314,16 +315,15 @@ h3 {
     position: relative;
     display: inline-block;
     transition: transform 0.5s ease-in-out;
-    border-radius: 12px;
+    border-radius: 21px;
     background-color: var(--basic-color);
-    padding: 1px;
     overflow: visible;
     top: -20px;
     z-index: 1;
 }
 
 .vision-hero_img img {
-    transform: translate(-2px, 2px) rotate(-1deg);
+    /* transform: translate(-2px, 2px) rotate(-1deg); */
     transition: transform 0.5s ease-in-out;
     border-radius: inherit;
 }

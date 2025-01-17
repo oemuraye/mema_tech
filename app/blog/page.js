@@ -1,6 +1,6 @@
 import Section1 from '@/components/BlogPage/Section1'
 import Footer from '@/components/Footer/Footer'
-import Header from '@/components/Heading/Header'
+import Header from '@/components/Header/Header'
 
 const BlogPage = () => {
   return (

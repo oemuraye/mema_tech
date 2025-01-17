@@ -1,5 +1,5 @@
 import Section1 from '@/components/ContactPage/Section1'
-import Header from '@/components/Heading/Header'
+import Header from '@/components/Header/Header'
 
 const ContactPage = () => {
   return (

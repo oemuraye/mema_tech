@@ -1,7 +1,7 @@
 import Section1 from '@/components/Aboutpage/Section1';
 import Section2 from '@/components/Aboutpage/Section2';
 import Footer from '@/components/Footer/Footer';
-import Header from '@/components/Heading/Header';
+import Header from '@/components/Header/Header';
 
 const About = () => {
   return (

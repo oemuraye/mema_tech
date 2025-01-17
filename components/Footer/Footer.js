@@ -77,9 +77,9 @@ const Footer = () => {
       <div className="container-fluid py-5">
 
         <section className="row">
-          <div className="col-md-4 col-sm-12 py-3">
+          <div className="col-md-5 col-sm-12 py-3">
             <section className="feedback-form">
-              <h2>LEAVE A MESSAGE</h2>
+              <h2 className='mb-4'>LEAVE A MESSAGE</h2>
               <form className="d-flex gap-4" onSubmit={handleSubmit}>
                 <input type="text" id="name" name="message" className="form-control" placeholder="Enter here" value={formData.message}
                   onChange={handleChange}
@@ -119,7 +119,7 @@ const Footer = () => {
             </section>
           </div>
 
-          <div className="col-md-4 col-sm-12 py-3">
+          <div className="col-md-3 col-sm-12 py-3">
             <section className="social-media d-flex flex-column gap-3" >
               <h3>ADDRESS</h3>
               <ul>
@@ -146,13 +146,13 @@ const Footer = () => {
         <hr />
 
         <section className="row footer-bottom">
-          <div className="col-md-4 col-sm-12 py-3">
+          <div className="col-md-4 col-sm-12 mt-4">
             <p className='mb-0'>Copyright &copy; 2023 MemaTech</p>
           </div>
-          <div className="col-md-4 col-sm-12 py-3">
+          <div className="col-md-4 col-sm-12 mt-4">
             <p className='mb-0'>All rights reserved, 2025</p>
           </div>
-          <div className="col-md-4 col-sm-12 py-3">
+          <div className="col-md-4 col-sm-12 mt-4">
             <p className='mb-0'>Website designed by cosmos design space</p>
           </div>
         </section>

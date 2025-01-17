@@ -22,7 +22,7 @@
 .programs_page-section1 .program-item .row {
     margin-left: 0;
     margin-right: 0;
-    /* height: 828px; */
+    height: 828px;
 }
 .program-list .program-details {
     background-color: var(--primary-color);
@@ -41,9 +41,9 @@
 }
 .program-list .program-details p {
     color: #fff;
-    font-size: 25px;
+    font-size: 27px;
     font-weight: 400;
-    line-height: 45px;
+    line-height: 45.9px;
     margin-top: 60px;
 }
 .program-list .image_container {

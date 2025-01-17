@@ -47,7 +47,7 @@ const Header = () => {
           </ul>
         </div>
         <div className="desktop-menu">
-          <Link href="/join" className="btn join-btn">Join Us</Link>
+          <Link href="/contact" className="btn join-btn">Join Us</Link>
         </div>
 
         {isMenuOpen && <div className="overlay" onClick={closeMenu}></div>}
@@ -59,7 +59,7 @@ const Header = () => {
             <li><Link href="/blog" onClick={toggleMenu} className={isActive("/blog") ? "active" : ""}>Blog</Link></li>
             <li><Link href="/contact" onClick={toggleMenu} className={isActive("/contact") ? "active" : ""}>Contact</Link></li>
             <li>
-              <Link href="/join" className="btn join-btn mt-3 text-white" onClick={toggleMenu}>
+              <Link href="/contact" className="btn join-btn mt-3 text-white" onClick={toggleMenu}>
                 Join Us
               </Link>
             </li>
