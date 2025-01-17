@@ -58,8 +58,10 @@ const Section7 = () => {
             {Object.values(visionDetails).map((detail, index) => (
                 <div key={index} className="vision-card m-auto my-3">
                     <div className="ball-pin mb-4"></div>
-                    <h5>{detail.title}</h5>
-                    <p className='mt-4'>{detail.description}</p>
+                    <div className="vision-card-text">
+                        <h5>{detail.title}</h5>
+                        <p className='mt-4'>{detail.description}</p>
+                    </div>
                 </div>
             ))}
         </div>
