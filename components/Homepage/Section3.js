@@ -78,7 +78,7 @@ const Section3 = () => {
                 trigger={triggerCountUp}
               />
               <p>Girls Reached</p>
-              <Link className="d-flex d-md-none my-5" href="">
+              <Link className="d-flex d-md-none my-5" href="/about">
                 Learn More
               </Link>
             </div>
