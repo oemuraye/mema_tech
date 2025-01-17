@@ -67,7 +67,7 @@ const Section7 = () => {
         <div className="inner-wrapper text-center pt-5 mt-4">
             <h2>Join us in delivering change—one girl, one dream, one step at a time.</h2>
 
-            <div className={`vision-hero_img`} ref={imageRef}>
+            <div className={`vision-hero_img ${inView ? 'in-view' : ''}`} ref={imageRef}>
                 <Image src={visionHeroImg} alt="" className='img-fluid' />
             </div>
         </div>
