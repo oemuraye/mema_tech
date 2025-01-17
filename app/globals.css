@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Palenk Radney'; 
-  src: url('@/public/fonts/palenk-radney-font/PalenkRadney-ARw1D.otf') format('opentype');
+  src: url('../public/fonts/palenk-radney-font/PalenkRadney-ARw1D.otf') format('opentype');
 }
 
 :root {
