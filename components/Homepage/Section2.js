@@ -19,7 +19,7 @@ const images = [
 
 const Section2 = () => {
     const sectionRef = useRef(null);
-    const [isStacked, setIsStacked] = useState(true);
+    const [isStacked, setIsStacked] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {

@@ -64,7 +64,7 @@ const Section7 = () => {
             ))}
         </div>
 
-        <div className="inner-wrapper text-center">
+        <div className="inner-wrapper text-center pt-5 mt-4">
             <h2>Join us in delivering change—one girl, one dream, one step at a time.</h2>
 
             <div className={`vision-hero_img`} ref={imageRef}>

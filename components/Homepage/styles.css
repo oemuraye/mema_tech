@@ -28,7 +28,7 @@ h3 {
     position: absolute;
     top: 50%; 
     left: 50%; 
-    z-index: 2;
+    z-index: 0;
     transition: transform 2s ease-in-out, opacity 2s ease-in-out;
     width: 100%;
 }
@@ -44,7 +44,7 @@ h3 {
 .image-display.spread + h2 {
     transform: translate(-50%, -250px); /* Restore to center */
     opacity: 1; /* Fade in */
-    z-index: 2; 
+    z-index: 0; 
 }
 
 
@@ -86,19 +86,19 @@ h3 {
 /* Apply offsets for overlapping effect in stacked state */
 .image-display.stacked .showcase-image:nth-child(1) {
     transform: translate(-50%, 0); /* Move left */
-    z-index: 0;
+    z-index: 1;
 }
 .image-display.stacked .showcase-image:nth-child(2) {
     transform: translate(-25%, 0); /* Move left */
-    z-index: 1;
+    z-index: 2;
 }
 .image-display.stacked .showcase-image:nth-child(3) {
     transform: translate(25%, 0); /* Move right */
-    z-index: 2;
+    z-index: 3;
 }
 .image-display.stacked .showcase-image:nth-child(4) {
     transform: translate(50%, 0); /* Move further right */
-    z-index: 3;
+    z-index: 4;
 }
 
 .image-display.spread {
@@ -114,11 +114,11 @@ h3 {
 /* Reset transforms for spread layout */
 .image-display.spread .showcase-image:nth-child(1) {
     transform: translate(-550px, 50px); /* Move to its leftmost position */
-    z-index: 0;
+    z-index: 2;
 }
 .image-display.spread .showcase-image:nth-child(2) {
     transform: translate(-200px, 50px); /* Move slightly left */
-    z-index: 1;
+    z-index: 2;
 }
 .image-display.spread .showcase-image:nth-child(3) {
     transform: translate(150px, 50px); /* Move slightly right */
@@ -126,7 +126,7 @@ h3 {
 }
 .image-display.spread .showcase-image:nth-child(4) {
     transform: translate(550px, 50px); /* Move to its rightmost position */
-    z-index: 3;
+    z-index: 2;
 }
 
 .showcase-image {
@@ -226,7 +226,7 @@ h3 {
     background-color: var(--primary-color);
 }
 .vision-section .inner-wrapper {
-    max-width: 1116px;
+    max-width: 1246px;
     margin: 0 auto;
 }
 .vision-section .inner-wrapper h2 {
