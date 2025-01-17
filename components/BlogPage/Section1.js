@@ -51,7 +51,7 @@ const Section1 = () => {
             {blogPosts.map((post, index) => (
                 <div key={index} className="col-md-6 col-sm-12 mb-4">
                     <div className="blog-card p-3">
-                        <Image src={post.image} alt={post.title} className="card-img-top " height='330px' />
+                        <Image src={post.image} alt={post.title} className="card-img-top img-fluid" />
                         <div className="card-body">
                             <h5 className="card-title">{post.title}</h5>
                             <p className="card-text">{post.content}</p>
