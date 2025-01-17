@@ -18,6 +18,9 @@ footer form input.form-control {
     padding-left: 1px;
     background-color: var(--light-bg_color);
 }
+form input.form-control:focus {
+    box-shadow: none;
+}
 footer form input::placeholder {
     color: #B5B9A0;
     font-weight: 400;
