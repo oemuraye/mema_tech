@@ -37,6 +37,7 @@
 .nav-link:hover {
     text-decoration: underline;
 }
+.mobile-menu ul li a.active,
 .nav-link.active {
     text-decoration: underline;
     font-weight: 700;
