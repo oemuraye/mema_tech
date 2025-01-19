@@ -96,7 +96,8 @@
     }
     .team-section h2,
     .mission-content h3 {
-        font-size: 32px;
+        font-size: 54px;
+        line-height: 52px;
     }
     .mission-content p {
         font-size: 16px;

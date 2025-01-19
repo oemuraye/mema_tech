@@ -76,7 +76,7 @@ const Footer = () => {
     <footer className='footer wrapper py-5'>
       <div className="container-fluid py-5">
 
-        <section className="row">
+        <section className="row pt-5">
           <div className="col-md-5 col-sm-12 py-3">
             <section className="feedback-form">
               <h2 className='mb-4'>LEAVE A MESSAGE</h2>

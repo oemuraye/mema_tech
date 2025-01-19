@@ -344,60 +344,86 @@ h3 {
 @media (max-width: 768px) {
     h3,
     .empowerment-section h3 {
-        font-size: 40px;
-        line-height: 40px;
+        font-size: 60px;
+        line-height: 58px;
     }
     .hero-section h1 {
-        font-size: 45px;
-        line-height: 45px;
+        font-size: 60px;
+        line-height: 58px;
+        margin-top: 75px;
     }
 
-    .vision-section .inner-wrapper h2,
+    /* .vision-section .inner-wrapper h2, */
     .vr_showcase-section h2 {
-        font-size: 40px;
-        line-height: 39px;
+        font-size: 60px;
+        line-height: 60px;
     }
     .vision-section h2 {
-        font-size: 40px !important;
-        line-height: 40px;
+        font-size: 54px !important;
+        line-height: 54px;
     }
     
     .image-display {
         justify-content: center;
         flex-wrap: wrap;
         gap: 40px;
-        height: 300px;
+        height: 600px;
     }
     .image-display.spread + h2 {
-        transform: translate(-50%, -170px); 
+        transform: translate(-50%, -220px); 
     }
     .image-display.stacked {
         height: 250px;
     }
     .image-display img {
-        width: 128px;
-        height: 133px;
+        width: 189px;
+        height: 198px;
         object-fit: cover;
     }
     /* Reset transforms for spread layout */
     .image-display.spread .showcase-image:nth-child(1) {
-        transform: translate(-90px, -60px); 
+        transform: translate(-100px, 30px); 
     }
     .image-display.spread .showcase-image:nth-child(2) {
-        transform: translate(90px, -60px); 
+        transform: translate(120px, 30px); 
     }
     .image-display.spread .showcase-image:nth-child(3) {
-        transform: translate(-90px, 90px);
+        transform: translate(-120px, 250px);
     }
     .image-display.spread .showcase-image:nth-child(4) {
-        transform: translate(90px, 90px); 
+        transform: translate(120px, 250px); 
     }
     .about-section p {
         font-size: 16px;
         line-height: 19px;
     }
-    .vision-section .inner-wrapper p {
-        font-size: 14px;
+    
+    .partners_sponsors-section .brand-logo {
+        width: 96px;
+        height: 49px;
+        border-radius: 13px;
+    }
+    .partners_sponsors-section h4 {
+        font-size: 20px;
+    }
+    .partners_sponsors-section .brand-logo img {
+        width: 96px;
+        height: 49px;
+        border-radius: 13px;
     }
     
+    .vision-section .inner-wrapper p {
+        font-size: 16px;
+    }
+    .vision-section .vision-hero_img img {
+        width: 209px;
+        height: auto;
+    }
+    .vision-hero_img:hover img,
+    .vision-hero_img.in-view img {
+        transform: translate(-38px, -10px) rotate(-10deg);
+    }
+    .vision-hero_img:hover {
+        transform: translate(50px, -10px) rotate(5deg);
+    }
 }

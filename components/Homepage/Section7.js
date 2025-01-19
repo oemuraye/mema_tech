@@ -49,7 +49,7 @@ const Section7 = () => {
 
   return (
     <section className='vision-section wrapper py-5'>
-        <div className="inner-wrapper text-center">
+        <div className="inner-wrapper text-center pt-5">
             <h2>Creating Opportunities and Driving Change</h2>
             <p className='my-4'>We are committed to opening doors for women and girls in the technology sector by offering education, training, and access to opportunities that enhance their employability and entrepreneurial potential.</p>
         </div>
@@ -66,7 +66,7 @@ const Section7 = () => {
             ))}
         </div>
 
-        <div className="inner-wrapper text-center pt-5 mt-4">
+        <div className="inner-wrapper text-center py-5 mt-4">
             <h2>Join us in delivering change—one girl, one dream, one step at a time.</h2>
 
             <div className={`vision-hero_img ${inView ? 'in-view' : ''}`} ref={imageRef}>

@@ -36,7 +36,7 @@ const Section3 = () => {
           <div className="col-md-5 col-sm-12">
             <section ref={sectionRef}>
               <h3 className="mb-4">ABOUT US</h3>
-              <Link className="d-none d-md-flex" href="">
+              <Link className="d-none d-md-flex" href="/about">
                 Learn More
               </Link>
 
