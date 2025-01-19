@@ -41,7 +41,7 @@ const blogPosts = [
 const Section1 = () => {
   return (
     <section className='blog_page-section1 wrapper padding_y-spacing'>
-        <article className="page-section1 hero container">
+        <article className="page-section1 hero container pt-5">
             <h2 className="text-md-center text-sm-start">BLOGS POST</h2>
             <p className="text-md-center text-sm-start">Empowering young minds, one story at a time. Explore our blog for inspiring tales and educational content that supports the growth and development of the girl child. From stories of overcoming obstacles to tips on building confidence and self-esteem, our blog is a resource for girls to learn, grow, and thrive.</p>
         </article>
