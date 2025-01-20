@@ -76,6 +76,7 @@ footer ul a {
     white-space: nowrap; 
     font-size: 128px; 
     color: var(--dark-color); 
+    font-family: var(--font-palenk);
 }
   
 @keyframes scroll-text {
