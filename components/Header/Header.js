@@ -59,7 +59,7 @@ const Header = () => {
             <li><Link href="/blog" onClick={toggleMenu} className={isActive("/blog") ? "active" : ""}>Blog</Link></li>
             <li><Link href="/contact" onClick={toggleMenu} className={isActive("/contact") ? "active" : ""}>Contact</Link></li>
             <li>
-              <Link href="/contact" className="btn join-btn mt-3 text-white" onClick={toggleMenu}>
+              <Link href="https://meet.google.com/qbi-knuc-nfh" className="btn join-btn mt-3 text-white" onClick={toggleMenu}>
                 Join Us
               </Link>
             </li>

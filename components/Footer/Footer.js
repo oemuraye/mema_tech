@@ -89,7 +89,7 @@ const Footer = () => {
                   {loading ? (
                     <span className="spinner-border spinner-border-sm text-secondary" role="status" />
                   ) : (
-                    "Join Us"
+                    "Send"
                   )}
                 </button>
               </form>
