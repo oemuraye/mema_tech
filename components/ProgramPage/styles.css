@@ -18,6 +18,20 @@
     line-height: 30px;
     color: #000;
 }
+.program-item-wrapper {
+    position: relative;
+}
+
+.program-item {
+    position: sticky;
+    top: 0;
+    z-index: 1; 
+}
+
+.program-item:nth-child(2) {
+    z-index: 2; 
+}
+
 
 .programs_page-section1 .program-item .row {
     margin-left: 0;
@@ -26,6 +40,13 @@
 }
 .program-list .program-details {
     background-color: var(--primary-color);
+}
+.program-list .program-details .details-text {
+    overflow: auto;
+    height: 500px;
+}
+.program-details .details-text::-webkit-scrollbar {
+    width: 0;
 }
 .program-list .program-details h3 {
     color: var(--light-bg_color);
@@ -49,11 +70,7 @@
 .program-list .image_container {
     position: sticky;
     top: 110px;
-    /* max-height: 497px; */
 }
-/* .program-list .image_container img {
-    max-height: 497px;
-} */
 .program-list .basic-bg_color {
     background-color: var(--basic-color);
 }
