@@ -1,16 +1,11 @@
+import BlogLayout from '@/app/blog/BlogLayout';
 import Section1 from '@/components/BlogPage/Section1'
-import Footer from '@/components/Footer/Footer'
-import Header from '@/components/Header/Header'
 
 const BlogPage = () => {
   return (
-    <section>
-        <Header />
-        <main>
-            <Section1 />
-        </main>
-        <Footer />
-    </section>
+    <BlogLayout>
+      <Section1 />
+    </BlogLayout>
   )
 }
 
