@@ -127,6 +127,9 @@
 .mobile-menu.show {
     right: 0;
 }
+.mobile-menu .join-btn {
+    font-size: 18px;
+}
 .overlay {
     position: fixed;
     top: 0;
