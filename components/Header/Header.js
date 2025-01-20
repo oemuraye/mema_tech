@@ -33,7 +33,7 @@ const Header = () => {
 
         <div className={`menu-icon ${isMenuOpen ? "open" : ""}`} onClick={toggleMenu}>
           <div></div>
-          <div></div>
+          {/* <div></div> */}
           <div></div>
         </div>
 
