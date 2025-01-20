@@ -39,9 +39,9 @@ const Section1 = () => {
                 </div>
                 <div className="col-md-7 col-sm-12 mb-5 program-details rounded-4 p-2 p-md-4 basic-bg_color">
                     <div className="p-md-4 p-2 py-5 ">
-                        <h3>KARATU GIRLS:</h3>
-                        <h5>Unlocking the Future for Secondary School Girls</h5>
-                        <p>At MemaTech, we believe in creating tailored opportunities that empower girls, women, and small businesses to thrive in a tech-driven world. Through our two core initiatives—Karatu Girls and Masma Reach—we address the unique needs of young girls and women, equipping them with the skills, confidence, and opportunities to excel in technology and beyond.</p>
+                        <h3>Masma Reach:</h3>
+                        <h5>Empowering Women and Small Businesses</h5>
+                        <p>The "Masma Reach" initiative empowers women and small and medium-sized enterprises (SMEs) with the skills and support they need to succeed in today’s digital landscape. This program challenges societal barriers, promotes inclusive work environments, and helps women and businesses unlock their full potential.</p>
                     </div>
                 </div>
             </div>

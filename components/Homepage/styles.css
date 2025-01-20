@@ -335,7 +335,7 @@ h3 {
     transform: translate(-38px, -20px) rotate(-10deg);
 }
 .vision-hero_img:hover {
-    transform: translate(50px, 0) rotate(5deg);
+    /* transform: translate(50px, 0) rotate(5deg); */
 }
 
 
@@ -370,7 +370,7 @@ h3 {
         height: 600px;
     }
     .image-display.spread + h2 {
-        transform: translate(-50%, -220px); 
+        transform: translate(-50%, -300px); 
     }
     .image-display.stacked {
         height: 250px;
@@ -382,16 +382,16 @@ h3 {
     }
     /* Reset transforms for spread layout */
     .image-display.spread .showcase-image:nth-child(1) {
-        transform: translate(-100px, 30px); 
+        transform: translate(-100px, 0); 
     }
     .image-display.spread .showcase-image:nth-child(2) {
-        transform: translate(120px, 30px); 
+        transform: translate(120px, 0); 
     }
     .image-display.spread .showcase-image:nth-child(3) {
-        transform: translate(-120px, 250px);
+        transform: translate(-120px, 230px);
     }
     .image-display.spread .showcase-image:nth-child(4) {
-        transform: translate(120px, 250px); 
+        transform: translate(120px, 230px); 
     }
     .about-section p {
         font-size: 16px;
@@ -424,6 +424,6 @@ h3 {
         transform: translate(-38px, -10px) rotate(-10deg);
     }
     .vision-hero_img:hover {
-        transform: translate(50px, -10px) rotate(5deg);
+        /* transform: translate(50px, -10px) rotate(5deg); */
     }
 }

@@ -152,6 +152,17 @@ const Section1 = () => {
 
                 </section>
 
+                <section className="marquee-section d-block d-md-none">
+                    <span className='marquee'>
+                        LET'S TALK &nbsp; <Image src={arrowLeftIcon} alt="social-icon" /> &nbsp;
+                        LET'S TALK &nbsp; <Image src={arrowLeftIcon} alt="social-icon" /> &nbsp;
+                        LET'S TALK &nbsp; <Image src={arrowLeftIcon} alt="social-icon" /> &nbsp;
+                        LET'S TALK &nbsp; <Image src={arrowLeftIcon} alt="social-icon" /> &nbsp;
+                        LET'S TALK &nbsp; <Image src={arrowLeftIcon} alt="social-icon" /> &nbsp;
+                        LET'S TALK &nbsp; <Image src={arrowLeftIcon} alt="social-icon" /> &nbsp;
+                    </span>
+                </section>
+                
                 <section className="row footer-bottom py-3 mt-4 d-md-none">
                     <div className="col-md-4 col-sm-12 py-md--3 py-1">
                         <p className='mb-0'>Copyright &copy; 2023 MemaTech</p>
@@ -164,7 +175,7 @@ const Section1 = () => {
                     </div>
                 </section>
 
-                <section className="marquee-section py-2">
+                <section className="marquee-section py-2 d-none d-md-block">
                     <span className='marquee'>
                         LET'S TALK &nbsp; <Image src={arrowLeftIcon} alt="social-icon" /> &nbsp;
                         LET'S TALK &nbsp; <Image src={arrowLeftIcon} alt="social-icon" /> &nbsp;

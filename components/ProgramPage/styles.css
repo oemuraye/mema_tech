@@ -69,7 +69,7 @@
 }
 .program-list .image_container {
     position: sticky;
-    top: 110px;
+    top: 120px;
 }
 .program-list .basic-bg_color {
     background-color: var(--basic-color);
@@ -102,5 +102,8 @@
     }
     .program-list .image_container img {
         height: 212px;
+        max-width: 318px;
+        object-fit: cover;
+        border-radius: 12px;
     }
 }

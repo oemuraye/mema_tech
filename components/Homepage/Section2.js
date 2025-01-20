@@ -47,7 +47,7 @@ const Section2 = () => {
     }, []);
 
     return (
-        <section className="vr_showcase-section py-5">
+        <section className="vr_showcase-section">
             <div className="pb-5">
                 {/* <h2 className="text-center text-uppercase">One girl at a time</h2> */}
 

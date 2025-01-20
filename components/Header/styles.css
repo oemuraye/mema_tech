@@ -49,9 +49,20 @@
     padding: 15px 30px;
     font-size: 18px;
 }
+.join-btn.outline-btn {
+    background-color: transparent;
+    color: #000 !important;
+    border: 1px solid #000;
+}
 .join-btn:hover {
     background-color: var(--dark-color);
     color: white;
+    transform: scale(0.98);
+    transition: all 0.5s ease;
+}
+.join-btn.outline-btn:hover {
+    background-color: transparent;
+    color: #000 !important;
     transform: scale(0.98);
     transition: all 0.5s ease;
 }
@@ -111,7 +122,7 @@
     list-style: none;
     padding: 0 10px;
     margin: 0;
-    margin-top: 75px;
+    margin-top: 100px;
     text-align: center;
 }
 .mobile-menu ul li {

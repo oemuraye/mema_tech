@@ -47,7 +47,8 @@ const Header = () => {
           </ul>
         </div>
         <div className="desktop-menu">
-          <Link href="/contact" className="btn join-btn">Join Us</Link>
+          <Link href="https://forms.gle/987afboskBLxqqvi8" target="_blank" className="btn join-btn">Join Us</Link>
+          <Link href="https://forms.gle/987afboskBLxqqvi8" target="_blank" className="btn join-btn outline-btn ms-3">Donate</Link>
         </div>
 
         {isMenuOpen && <div className="overlay" onClick={closeMenu}></div>}
@@ -59,8 +60,13 @@ const Header = () => {
             <li><Link href="/blog" onClick={toggleMenu} className={isActive("/blog") ? "active" : ""}>Blog</Link></li>
             <li><Link href="/contact" onClick={toggleMenu} className={isActive("/contact") ? "active" : ""}>Contact</Link></li>
             <li>
-              <Link href="https://meet.google.com/qbi-knuc-nfh" className="btn join-btn mt-3 text-white" onClick={toggleMenu}>
+              <Link href="https://forms.gle/987afboskBLxqqvi8" target="_blank" className="btn join-btn mt-3 text-white" onClick={toggleMenu}>
                 Join Us
+              </Link>
+            </li>
+            <li>
+              <Link href="https://forms.gle/987afboskBLxqqvi8" target="_blank" className="btn join-btn outline-btn mt-3 text-white" onClick={toggleMenu}>
+                Donate 
               </Link>
             </li>
           </ul>

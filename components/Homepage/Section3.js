@@ -31,7 +31,7 @@ const Section3 = () => {
 
   return (
     <section className="about-section wrapper py-5">
-      <div className="inner_wrapper">
+      <div className="inner_wrapper pt-5">
         <div className="row">
           <div className="col-md-5 col-sm-12">
             <section ref={sectionRef}>

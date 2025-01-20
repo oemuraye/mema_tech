@@ -9,32 +9,40 @@ import './styles.css'
 
 const blogPosts = [
     {
+      id: 1,
       title: "How to Support the Girl Child",
       content:
         "At MemaTech, we believe in creating tailored opportunities that empower girls, women, and small businesses to thrive in a tech-driven world. Through our two core initiatives—Karatu Girls and Masma Reach.",
       image: blogImage1,
       link: "/blog/support-girl-child",
+      slug: 1
     },
     {
+      id: 2,
       title: "How to Support the Girl Child",
       content:
         "At MemaTech, we believe in creating tailored opportunities that empower girls, women, and small businesses to thrive in a tech-driven world. Through our two core initiatives—Karatu Girls and Masma Reach.",
       image: blogImage1,
       link: "/blog/support-girl-child",
+      slug: 2
     },
     {
+      id: 3,
       title: "How to Support the Girl Child",
       content:
         "At MemaTech, we believe in creating tailored opportunities that empower girls, women, and small businesses to thrive in a tech-driven world. Through our two core initiatives—Karatu Girls and Masma Reach.",
       image: blogImage1,
       link: "/blog/support-girl-child",
+      slug: 3
     },
     {
+      id: 4,
       title: "How to Support the Girl Child",
       content:
         "At MemaTech, we believe in creating tailored opportunities that empower girls, women, and small businesses to thrive in a tech-driven world. Through our two core initiatives—Karatu Girls and Masma Reach.",
       image: blogImage1,
       link: "/blog/support-girl-child",
+      slug: 4
     },
   ];
 
@@ -55,7 +63,7 @@ const Section1 = () => {
                         <div className="card-body">
                             <h5 className="card-title">{post.title}</h5>
                             <p className="card-text">{post.content}</p>
-                            <Link href={post.link} className="btn btn-primary mt-3">
+                            <Link href={`/blog/${post.slug}`} className="btn btn-primary mt-3">
                                 Read More
                             </Link>
                         </div>

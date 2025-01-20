@@ -93,7 +93,7 @@ footer ul a {
 
 @media (max-width: 768px) {
     .marquee {
-        font-size: 32px; 
+        font-size: 65px; 
     }
     .marquee img {
         width: 39px;
