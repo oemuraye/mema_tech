@@ -22,88 +22,119 @@ import mentorImg5 from '@/public/images/mentor-img5.png';
 import mentorImg6 from '@/public/images/mentor-img6.png';
 
 const teamMembers = [
-    {
-      name: "Tryphena Ene Ojile",
-      position: "Executive Director",
-      image: teamImg1,
-      social: {
-        linkedin: "https://linkedin.com/in/tryphena",
-        instagram: "https://instagram.com/tryphena",
-      },
+  {
+    name: "Tryphena Ene Ojile",
+    position: "Executive Director",
+    image: teamImg1,
+    social: {
+      linkedin: "https://www.linkedin.com/in/tryphena-ojile",
+      // instagram: "https://instagram.com/tryphena",
     },
-    {
-      name: "Arome Ibrahim",
-      position: "Lead - Operations",
-      image: teamImg2,
-      social: {
-        linkedin: "https://linkedin.com/in/arome",
-        instagram: "https://instagram.com/arome",
-      },
+  },
+  {
+    name: "Arome Ibrahim",
+    position: "Lead - Operations",
+    image: teamImg2,
+    social: {
+      linkedin: "https://www.linkedin.com/in/aromeibrahim",
+      // instagram: "https://instagram.com/arome",
     },
-    {
-      name: "Enoch Leonard Fwa",
-      position: "Lead - Technology & Innovation",
-      image: teamImg3,
-      social: {},
+  },
+  {
+    name: "Enoch Leonard Fwa",
+    position: "Lead - Technology & Innovation",
+    image: teamImg3,
+    social: {
+      linkedin: "https://www.linkedin.com/in/leonrd",
     },
-    {
-      name: "Lovina Ihotu OGIDI",
-      position: "Lead - Legal & Compliance",
-      image: teamImg4,
-      social: {},
+  },
+  {
+    name: "Lovina Ihotu OGIDI",
+    position: "Lead - Legal & Compliance",
+    image: teamImg4,
+    social: {
+      linkedin: "https://www.linkedin.com/in/lovina-ihotu-ogidi",
     },
-    {
-      name: "Suleiman Nabagi",
-      position: "Creative Director",
-      image: teamImg5,
-      social: {},
+  },
+  {
+    name: "Suleiman Nabagi",
+    position: "Creative Director",
+    image: teamImg5,
+    social: {
+      linkedin: "https://www.linkedin.com/in/suleiymahn/",
     },
-    {
-      name: "Ojonoka Itodo",
-      position: "Monitoring and Evaluation Officer",
-      image: teamImg6,
-      social: {},
+  },
+  {
+    name: "Ojonoka Itodo",
+    position: "Monitoring and Evaluation Officer",
+    image: teamImg6,
+    social: {
+      linkedin: "https://www.linkedin.com/in/ojonoka-itodo/",
     },
-    {
-      name: "Chinazor Umeakuka",
-      position: "Community Manager",
-      image: teamImg7,
-      social: {},
+  },
+  {
+    name: "Chinazor Umeakuka",
+    position: "Community Manager",
+    image: teamImg7,
+    social: {
+      linkedin: "https://www.linkedin.com/in/chinazor-umeakuka-a87a1413a/",
     },
-    {
-      name: "Joseph Yaba",
-      position: "Advisory Board - AUECOSOC",
-      image: teamImg8,
-      social: {},
+  },
+  {
+    name: "Joseph Yaba",
+    position: "Advisory Board - AUECOSOC",
+    image: teamImg8,
+    social: {
+      linkedin: "https://www.linkedin.com/in/joseph-emmanuel-yaba-8893487b/",
     },
+  },
 ];
 
 const mentorMembers = [
-    {
-      name: "Tryphena Ene Ojile",
-      image: mentorImg1,
+  {
+    name: "Mayowa Babalola",
+    image: mentorImg1,
+    social: {
+      linkedin: "https://www.linkedin.com/in/babalola-mayowa-897074177/",
     },
-    {
-      name: "Arome Ibrahim",
-      image: mentorImg2,
+  },
+  {
+    name: "Samuel Fadunsi",
+    image: mentorImg2,
+    social: {
+      linkedin: "https://www.linkedin.com/in/samuelfadunsin/",
     },
-    {
-      name: "Enoch Leonard Fwa",
-      image: mentorImg3,
+  },
+  {
+    name: "Anthony Odigie",
+    image: mentorImg3,
+    social: {
+      linkedin: "https://www.linkedin.com/in/odigie-anthony/",
     },
-    {
-      name: "Lovina Ihotu OGIDI",
-      image: mentorImg4,
+  },
+  {
+    name: "Emmanuel Ogunwede",
+    image: mentorImg4,
+    social: {
+      linkedin: "https://www.linkedin.com/in/emmanuel-ogunwede-665404126/",
     },
-    {
-      name: "Suleiman Nabagi",
-      image: mentorImg5,
+  },
+  {
+    name: "Dalahol Deborah",
+    image: mentorImg5,
+    social: {
+      linkedin: "https://www.linkedin.com/in/deborah-dalahol-99b5a31a9/",
     },
-    {
-      name: "Ojonoka Itodo",
-      image: mentorImg6,
+  },
+  {
+    name: "Joyce Pede",
+    image: mentorImg6,
+    social: {
+      linkedin: "https://www.linkedin.com/in/joyce-pede-97bb44147/",
     },
+  },
 ];
+
 
 
 
@@ -124,15 +155,14 @@ const Section2 = () => {
                     <p className='mb-0'>{member.position}</p>
                     <div className="social-icons d-flex justify-content-center gap-3">
                         {member.social.linkedin && (
-                            <a href={member.social.linkedin} target="_blank" rel="noopener noreferrer">
-                                <FontAwesomeIcon icon={faInstagram} size='' />
-                            </a>
+                          <a href={member.social.linkedin} target="_blank" rel="noopener noreferrer">
+                            <FontAwesomeIcon icon={faLinkedinIn}  />
+                          </a>
                         )}
                         {member.social.instagram && (
-                            <a href={member.social.instagram} target="_blank" rel="noopener noreferrer">
-                                <FontAwesomeIcon icon={faLinkedinIn}  />
-                                {/* <Image src={linkedinIcon} alt="social-icon" /> */}
-                            </a>
+                          <a href={member.social.instagram} target="_blank" rel="noopener noreferrer">
+                            <FontAwesomeIcon icon={faInstagram} size='' />
+                          </a>
                         )}
                     </div>
                 </div>
@@ -150,6 +180,18 @@ const Section2 = () => {
                         width={240} height={240}
                     />
                     <h5 className='mb-0'>{member.name}</h5>
+                    <div className="social-icons d-flex justify-content-center gap-3">
+                        {member.social.linkedin && (
+                          <a href={member.social.linkedin} target="_blank" rel="noopener noreferrer">
+                            <FontAwesomeIcon icon={faLinkedinIn}  />
+                          </a>
+                        )}
+                        {member.social.instagram && (
+                          <a href={member.social.instagram} target="_blank" rel="noopener noreferrer">
+                            <FontAwesomeIcon icon={faInstagram} size='' />
+                          </a>
+                        )}
+                    </div>
                 </div>
             ))}
             </div>

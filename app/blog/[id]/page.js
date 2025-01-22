@@ -1,13 +1,11 @@
 "use client";
 
 import { notFound } from "next/navigation";
-import Image from "next/image";
 import { use } from "react";
 
 import blogImage1 from "@/public/images/visionImage1.png";
 import BlogLayout from "../BlogLayout";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
+import BlogPost from "@/components/BlogPage/BlogPost";
 
 const blogPosts = [
   {
@@ -45,30 +43,17 @@ const blogPosts = [
 ];
 
 export default function BlogPostPage({ params }) {
-  // Unwrap the params Promise with `use`
   const { id } = use(params);
 
-  // Find the blog post by ID
   const blogPost = blogPosts.find((post) => post.id === id);
 
   if (!blogPost) {
-    notFound(); // Show the 404 page if the post is not found
+    notFound();
   }
 
   return (
     <BlogLayout>
-      <section className="blog-post wrapper py-5">
-        <div className="container">
-        <button onClick={() => window.history.back()} className="btn join-btn outline-btn mb-3 py-2 px-4">
-          <FontAwesomeIcon icon={faAngleLeft} /> Back
-        </button>
-          <div className="d-flex justify-content-center">
-            <Image src={blogPost.image} alt={blogPost.title} className="img-fluid" />
-          </div>
-          <h1 className="mt-4">{blogPost.title}</h1>
-          <p className="mt-3">{blogPost.content}</p>
-        </div>
-      </section>
+      <BlogPost blogPost={blogPost} />
     </BlogLayout>
   );
 }

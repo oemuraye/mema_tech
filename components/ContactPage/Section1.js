@@ -82,6 +82,16 @@ const Section1 = () => {
     <section className='contact_page-section1'>
         <footer className='footer wrapper'>
             <div className="container-fluid pt-5 pb-3">
+                <section className="marquee-section">
+                  <span className='marquee'>
+                      LET'S TALK &nbsp; <Image src={arrowLeftIcon} alt="social-icon" /> &nbsp;
+                      LET'S TALK &nbsp; <Image src={arrowLeftIcon} alt="social-icon" /> &nbsp;
+                      LET'S TALK &nbsp; <Image src={arrowLeftIcon} alt="social-icon" /> &nbsp;
+                      LET'S TALK &nbsp; <Image src={arrowLeftIcon} alt="social-icon" /> &nbsp;
+                      LET'S TALK &nbsp; <Image src={arrowLeftIcon} alt="social-icon" /> &nbsp;
+                      LET'S TALK &nbsp; <Image src={arrowLeftIcon} alt="social-icon" /> &nbsp;
+                  </span>
+                </section>
 
                 <section className="row">
                     <div className="col-md-4 col-sm-12 py-3">
@@ -152,16 +162,6 @@ const Section1 = () => {
 
                 </section>
 
-                <section className="marquee-section d-block d-md-none">
-                    <span className='marquee'>
-                        LET'S TALK &nbsp; <Image src={arrowLeftIcon} alt="social-icon" /> &nbsp;
-                        LET'S TALK &nbsp; <Image src={arrowLeftIcon} alt="social-icon" /> &nbsp;
-                        LET'S TALK &nbsp; <Image src={arrowLeftIcon} alt="social-icon" /> &nbsp;
-                        LET'S TALK &nbsp; <Image src={arrowLeftIcon} alt="social-icon" /> &nbsp;
-                        LET'S TALK &nbsp; <Image src={arrowLeftIcon} alt="social-icon" /> &nbsp;
-                        LET'S TALK &nbsp; <Image src={arrowLeftIcon} alt="social-icon" /> &nbsp;
-                    </span>
-                </section>
                 
                 <section className="row footer-bottom py-3 mt-4 d-md-none">
                     <div className="col-md-4 col-sm-12 py-md--3 py-1">
@@ -175,7 +175,7 @@ const Section1 = () => {
                     </div>
                 </section>
 
-                <section className="marquee-section py-2 d-none d-md-block">
+                {/* <section className="marquee-section py-2 d-none d-md-block">
                     <span className='marquee'>
                         LET'S TALK &nbsp; <Image src={arrowLeftIcon} alt="social-icon" /> &nbsp;
                         LET'S TALK &nbsp; <Image src={arrowLeftIcon} alt="social-icon" /> &nbsp;
@@ -184,7 +184,7 @@ const Section1 = () => {
                         LET'S TALK &nbsp; <Image src={arrowLeftIcon} alt="social-icon" /> &nbsp;
                         LET'S TALK &nbsp; <Image src={arrowLeftIcon} alt="social-icon" /> &nbsp;
                     </span>
-                </section>
+                </section> */}
 
             </div>
         </footer>

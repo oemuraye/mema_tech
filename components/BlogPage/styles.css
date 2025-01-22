@@ -25,7 +25,9 @@
 .blog-card:hover {
     transform: translateY(-5px);
 }
-  
+.blog-card .card-img-top {
+    max-height: 330px;
+} 
 .blog-card .card-body {
     padding: 20px;
 }
