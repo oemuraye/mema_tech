@@ -184,7 +184,8 @@ const Section2 = () => {
                     <div className="social-icons d-flex justify-content-center gap-3">
                         {member.social.linkedin && (
                           <a href={member.social.linkedin} target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon icon={faLinkedinIn}  />
+                            <Image src={linkedinIcon} alt="social-icon" />
+                            {/* <FontAwesomeIcon icon={faLinkedinIn}  /> */}
                           </a>
                         )}
                         {member.social.instagram && (
