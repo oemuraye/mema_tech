@@ -26,7 +26,8 @@
     transform: translateY(-5px);
 }
 .blog-card .card-img-top {
-    max-height: 330px;
+    max-height: 320px;
+    object-fit: cover;
 } 
 .blog-card .card-body {
     padding: 20px;

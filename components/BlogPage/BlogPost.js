@@ -9,7 +9,7 @@ const BlogPost = ({ blogPost }) => {
                 <FontAwesomeIcon icon={faAngleLeft} /> Back
             </button>
             <div className="d-flex justify-content-center">
-                <Image src={blogPost.image} alt={blogPost.title} className="img-fluid" style={{ maxHeight: "330px" }}/>
+                <Image src={blogPost.image} alt={blogPost.title} className="img-fluid" style={{ maxHeight: "320px" }}/>
                 </div>
                 <h1 className="mt-4">{blogPost.title}</h1>
                 <p className="mt-3">{blogPost.content}</p>
