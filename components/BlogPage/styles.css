@@ -20,6 +20,8 @@
     box-shadow: 0 4px 8px #0000001a;
     overflow: hidden;
     transition: transform 0.3s ease;
+    max-width: 595px;
+    margin: auto;
 }
   
 .blog-card:hover {
@@ -27,6 +29,10 @@
 }
 .blog-card .card-img-top {
     max-height: 320px;
+    max-width: 550px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 } 
 .blog-card .card-body {
     padding: 20px;
