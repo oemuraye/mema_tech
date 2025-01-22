@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import linkedinIcon from "@/public/icons/linkedin-icon.png";
+import linkedinIcon from "@/public/icons/linkedin-icon2.png";
 
 import teamImg1 from '@/public/images/executive-img1.png';
 import teamImg2 from '@/public/images/executive-img2.png';
@@ -156,7 +156,8 @@ const Section2 = () => {
                     <div className="social-icons d-flex justify-content-center gap-3">
                         {member.social.linkedin && (
                           <a href={member.social.linkedin} target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon icon={faLinkedinIn}  />
+                            {/* <FontAwesomeIcon icon={faLinkedinIn}  /> */}
+                            <Image src={linkedinIcon} alt="social-icon" />
                           </a>
                         )}
                         {member.social.instagram && (
