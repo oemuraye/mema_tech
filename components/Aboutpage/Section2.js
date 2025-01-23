@@ -149,7 +149,7 @@ const Section2 = () => {
             {teamMembers.map((member, index) => (
                 <div key={index} className="team-member text-center mb-4 col-md-3 col-sm-6">
                     <Image src={member.image} alt={member.name} className="rounded-circle mb-1 team-image" 
-                        width={240} height={240}
+                        width={200} height={200}
                     />
                     <h5 className='mb-0'>{member.name}</h5>
                     <p className='mb-0'>{member.position}</p>
@@ -178,7 +178,7 @@ const Section2 = () => {
             {mentorMembers.map((member, index) => (
                 <div key={index} className="team-member text-center mb-4 col-md-3 col-sm-6">
                     <Image src={member.image} alt={member.name} className="rounded-circle team-image mb-1" 
-                        width={240} height={240}
+                        width={200} height={200}
                     />
                     <h5 className='mb-0'>{member.name}</h5>
                     <div className="social-icons d-flex justify-content-center gap-3">

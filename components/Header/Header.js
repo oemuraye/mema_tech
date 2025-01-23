@@ -13,7 +13,13 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
 
-  const isActive = (path) => pathname === path;
+  // const isActive = (path) => pathname === path;
+  const isActive = (path) => {
+    if (path === "/") {
+      return pathname === "/";
+    }
+    return pathname.startsWith(path);
+  };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
