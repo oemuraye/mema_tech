@@ -70,6 +70,9 @@
 .blog-post ul {
     list-style: disc;
 }
+.blog-post h3 {
+    font-size: 40px;
+}
 
 @media (max-width: 768px) {
     .blog-card .card-body {
