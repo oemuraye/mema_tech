@@ -10,10 +10,10 @@ const BlogPost = ({ blogPost }) => {
             </button>
             <div className="d-flex justify-content-center">
                 <Image src={blogPost.image} alt={blogPost.title} className="img-fluid" style={{ maxHeight: "320px" }}/>
-                <h1 className="mt-4 text-center">{blogPost.title}</h1>
-                {/* <p className="mt-3">{blogPost.content}</p> */}
-                <div className="mt-3" dangerouslySetInnerHTML={{ __html: blogPost.content }}></div>
             </div>
+            <h1 className="mt-4 text-center">{blogPost.title}</h1>
+            {/* <p className="mt-3">{blogPost.content}</p> */}
+            <div className="mt-3" dangerouslySetInnerHTML={{ __html: blogPost.content }}></div>
           </div>
     </section>
   )
