@@ -67,6 +67,9 @@
 .blog-card .btn:hover {
     background-color: #444;
 }
+.blog-post ul {
+    list-style: disc;
+}
 
 @media (max-width: 768px) {
     .blog-card .card-body {

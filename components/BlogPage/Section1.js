@@ -10,36 +10,34 @@ import './styles.css'
 const blogPosts = [
     {
       id: 1,
-      title: "How to Support the Girl Child",
+      title: "Introducing the Karatu Girls Initiative",
       content:
-        "At MemaTech, we believe in creating tailored opportunities that empower girls, women, and small businesses to thrive in a tech-driven world. Through our two core initiatives—Karatu Girls and Masma Reach.",
+        "At Mematech, we are committed to bridging the digital divide and fostering inclusivity in the technology sector. As part of our efforts, we are proud to introduce the Karatu Girls initiative, a key program designed to introduce secondary school girls in Nigeria to the transformative power of technology.",
       image: blogImage1,
-      link: "/blog/support-girl-child",
     },
     {
       id: 2,
-      title: "How to Support the Girl Child",
+      title: "Empowering Young Women in Tech: The Girls in Tech Initiative",
       content:
-        "At MemaTech, we believe in creating tailored opportunities that empower girls, women, and small businesses to thrive in a tech-driven world. Through our two core initiatives—Karatu Girls and Masma Reach.",
+        "Mematech, a leading tech organization, launched the Girls in Tech: Explore, Engage, Empower initiative to bridge the digital divide and foster inclusivity in the technology sector.",
       image: blogImage1,
-      link: "/blog/support-girl-child",
     },
-    {
-      id: 3,
-      title: "How to Support the Girl Child",
-      content:
-        "At MemaTech, we believe in creating tailored opportunities that empower girls, women, and small businesses to thrive in a tech-driven world. Through our two core initiatives—Karatu Girls and Masma Reach.",
-      image: blogImage1,
-      link: "/blog/support-girl-child",
-    },
-    {
-      id: 4,
-      title: "How to Support the Girl Child",
-      content:
-        "At MemaTech, we believe in creating tailored opportunities that empower girls, women, and small businesses to thrive in a tech-driven world. Through our two core initiatives—Karatu Girls and Masma Reach.",
-      image: blogImage1,
-      link: "/blog/support-girl-child",
-    },
+    // {
+    //   id: 3,
+    //   title: "How to Support the Girl Child",
+    //   content:
+    //     "At MemaTech, we believe in creating tailored opportunities that empower girls, women, and small businesses to thrive in a tech-driven world. Through our two core initiatives—Karatu Girls and Masma Reach.",
+    //   image: blogImage1,
+    //   link: "/blog/support-girl-child",
+    // },
+    // {
+    //   id: 4,
+    //   title: "How to Support the Girl Child",
+    //   content:
+    //     "At MemaTech, we believe in creating tailored opportunities that empower girls, women, and small businesses to thrive in a tech-driven world. Through our two core initiatives—Karatu Girls and Masma Reach.",
+    //   image: blogImage1,
+    //   link: "/blog/support-girl-child",
+    // },
   ];
 
 const Section1 = () => {
