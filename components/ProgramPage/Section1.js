@@ -40,7 +40,7 @@ const Section1 = () => {
                         <Image src={programImage2} alt="Program 1" className='img-fluid' height="462px"/>
                     </div>
                 </div>
-                <div className="col-md-7 col-sm-12 mb-5 program-details rounded-4 p-2 p-md-4">
+                <div className="col-md-7 col-sm-12 mb-5 program-details rounded-4 p-2 p-md-4 basic-bg_color">
                     <div className="p-md-4 p-2 py-5 details-text">
                         <h3>KARATU GIRLS:</h3>
                         <h5>Unlocking the Future for Secondary School Girls</h5>
@@ -56,7 +56,7 @@ const Section1 = () => {
                         <Image src={programImage3} alt="Program 1" className='img-fluid' height="462px"/>
                     </div>
                 </div>
-                <div className="col-md-7 col-sm-12 mb-5 program-details rounded-4 p-2 p-md-4 basic-bg_color">
+                <div className="col-md-7 col-sm-12 mb-5 program-details rounded-4 p-2 p-md-4">
                     <div className="p-md-4 p-2 py-5 ">
                         <h3>Masma Reach:</h3>
                         <h5>Empowering Women and Small Businesses</h5>
