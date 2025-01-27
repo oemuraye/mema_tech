@@ -25,7 +25,7 @@ const Section1 = () => {
                 </div>
                 <div className="col-md-7 col-sm-12 mb-5 program-details rounded-4 p-2 p-md-4">
                     <div className="p-md-4 p-2 py-5 details-text">
-                        <h3>Laptop4STEM:</h3>
+                        <h3>Laptop<span>4</span>STEM:</h3>
                         <h5>Empowering Girls to Pursue STEM Education</h5>
                         <p>The Laptop4STEM initiative aims to provide laptops to girls in underserved communities who are passionate about STEM education. The goal is to empower these girls with the tools and resources they need to succeed in STEM-related careers and pursue their dreams. Many girls in these communities lack access to laptops and digital tools, creating a digital divide that can lead to a significant gap in STEM education.</p>
                         <p>To help bridge this gap, you can donate a gently used laptop, make a financial donation to purchase new laptops, or spread the word and raise awareness about the importance of STEM education for girls.</p>
