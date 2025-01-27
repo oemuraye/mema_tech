@@ -71,6 +71,9 @@
     position: sticky;
     top: 120px;
 }
+.program-list .image_container img {
+    border-radius: 25.82px;
+}
 .program-list .basic-bg_color {
     background-color: var(--basic-color);
 }
