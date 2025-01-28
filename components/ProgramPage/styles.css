@@ -115,7 +115,7 @@
         margin-top: 35px;
     }
     .program-list .image_container img {
-        height: 212px;
+        height: auto;
         max-width: 318px;
         object-fit: cover;
         border-radius: 12px;
