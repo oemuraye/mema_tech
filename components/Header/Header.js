@@ -54,7 +54,8 @@ const Header = () => {
         </div>
         <div className="desktop-menu">
           <Link href="https://forms.gle/987afboskBLxqqvi8" target="_blank" className="btn join-btn">Join Us</Link>
-          <Link href="https://wa.me/2348138904254?text=Hello%2C%20I%20would%20like%20to%20donate" target="_blank" className="btn join-btn outline-btn ms-3">Donate</Link>
+          <Link href="https://wa.me/2348138904254?text=Hello%2C%20I'm%20interested%20in%20making%20a%20donation%20to%20support%20your%20Mematech.%20Could%20you%20please%20tell%20me%20more%20about%20how%20my%20donation%20would%20be%20used%20and%20what%20impact%20it%20would%20have%20on%20the%20girls%20you're%20supporting%3F"
+           target="_blank" className="btn join-btn outline-btn ms-3">Donate</Link>
         </div>
 
         {isMenuOpen && <div className="overlay" onClick={closeMenu}></div>}
@@ -71,7 +72,8 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link href="https://wa.me/2348138904254?text=Hello%2C%20I%20would%20like%20to%20donate" target="_blank" className="btn join-btn outline-btn mt-3 text-white" onClick={toggleMenu}>
+              <Link href="https://wa.me/2348138904254?text=Hello%2C%20I'm%20interested%20in%20making%20a%20donation%20to%20support%20your%20Mematech.%20Could%20you%20please%20tell%20me%20more%20about%20how%20my%20donation%20would%20be%20used%20and%20what%20impact%20it%20would%20have%20on%20the%20girls%20you're%20supporting%3F"
+               target="_blank" className="btn join-btn outline-btn mt-3 text-white" onClick={toggleMenu}>
                 Donate 
               </Link>
             </li>
