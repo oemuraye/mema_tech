@@ -54,7 +54,7 @@ const Header = () => {
         </div>
         <div className="desktop-menu">
           <Link href="https://forms.gle/987afboskBLxqqvi8" target="_blank" className="btn join-btn">Join Us</Link>
-          <Link href="" target="_blank" className="btn join-btn outline-btn ms-3">Donate</Link>
+          <Link href="https://wa.me/2348138904254?text=Hello%2C%20I%20would%20like%20to%20donate" target="_blank" className="btn join-btn outline-btn ms-3">Donate</Link>
         </div>
 
         {isMenuOpen && <div className="overlay" onClick={closeMenu}></div>}
@@ -71,7 +71,7 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link href="" target="_blank" className="btn join-btn outline-btn mt-3 text-white" onClick={toggleMenu}>
+              <Link href="https://wa.me/2348138904254?text=Hello%2C%20I%20would%20like%20to%20donate" target="_blank" className="btn join-btn outline-btn mt-3 text-white" onClick={toggleMenu}>
                 Donate 
               </Link>
             </li>
